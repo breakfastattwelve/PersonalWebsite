@@ -1,9 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleLeft} from '@fortawesome/free-solid-svg-icons'
 import { RxHamburgerMenu } from "react-icons/rx";
-
 
 function Navbar() {
 
@@ -16,12 +13,11 @@ function Navbar() {
   return (
     <>
         <div className="bg-[#0d1117]">
-          <div className="container mx-auto max-w-[1320px] relative h-auto p-10 flex flex-col md:flex-row md:justify-between items-center border-b border-white">
+          <div className="w-full relative h-auto p-10 flex flex-col md:flex-row md:justify-between items-center border-b border-white shadow-[0_2px_10px_rgba(255,255,255,0.3)]">
            
-            <div className='flex flex-col text-3xl font-bold text-white px-4'>
+            <div className='flex items-center justify-center text-3xl font-bold text-white px-4  py-4 md:py-0'>
               <div className="cursor-pointer text-4xl flex items-center">
-                <FontAwesomeIcon icon={faAngleLeft} className="text-3xl mr-0" />
-                KL
+                <span className="text-4xl font-bold">Kittipak's Portfolio</span>
               </div>
             </div>
                 
